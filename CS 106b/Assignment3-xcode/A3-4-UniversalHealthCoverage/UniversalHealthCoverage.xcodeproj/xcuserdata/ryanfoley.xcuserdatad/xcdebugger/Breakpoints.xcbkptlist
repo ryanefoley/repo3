@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "1.0">
+   <FileBreakpoints>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "UniversalHealthCoverage.cpp"
+         timestampString = "359923317.286709"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "111"
+         endingLineNumber = "111"
+         landmarkName = "canOfferUniversalCoverage(Set&lt;string&gt;&amp; cities, Vector&lt; Set&lt;string&gt; &gt;&amp; locations, int numHospitals, Vector&lt; Set&lt;string&gt; &gt;&amp; result)"
+         landmarkType = "7">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "UniversalHealthCoverage.cpp"
+         timestampString = "359923317.286709"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "113"
+         endingLineNumber = "113"
+         landmarkName = "canOfferUniversalCoverage(Set&lt;string&gt;&amp; cities, Vector&lt; Set&lt;string&gt; &gt;&amp; locations, int numHospitals, Vector&lt; Set&lt;string&gt; &gt;&amp; result)"
+         landmarkType = "7">
+      </FileBreakpoint>
+   </FileBreakpoints>
+</Bucket>

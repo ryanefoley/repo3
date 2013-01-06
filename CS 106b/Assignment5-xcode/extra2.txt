@@ -1,0 +1,64 @@
+/**********************************************
+ * File: pqueue-extra.h
+ *
+ * Your own custom priority queue class, if you
+ * want to build one for extra credit.
+ *
+ * This is the binomial heap.
+ */
+#ifndef PQueue_Extra_Included
+#define PQueue_Extra_Included
+
+#include <string>
+using namespace std;
+
+/*
+ * TODO: Describe this class!
+ */
+class ExtraPriorityQueue {
+public:
+	/* Constructs a new, empty priority queue. */
+	ExtraPriorityQueue();
+	
+	/* Cleans up all memory allocated by this priority queue. */
+	~ExtraPriorityQueue();
+	
+	/* Returns the number of elements in the priority queue. */
+	int size();
+	
+	/* Returns whether or not the priority queue is empty. */
+	bool isEmpty();
+	
+    /* Merges trees in heap keeping binomial tree structure. */
+	void ExtraPriorityQueue::merge() {
+    
+    /* Enqueues a new string into the priority queue. */
+	void enqueue(string value);
+	
+	/* Returns, but does not remove, the lexicographically first string in the
+	 * priority queue.
+	 */
+	string peek();
+	
+	/* Returns and removes the lexicographically first string in the
+	 * priority queue.
+	 */
+	string dequeueMin();
+
+private:
+	struct node {
+		string value;
+		node* right;
+        node* left;
+        node* parent; //if parent null, then node is a root.
+        int order;
+        
+	};
+    node* head;
+    node* tail;
+    int logicalLength;
+	int allocatedLength;
+	void grow();
+};
+
+#endif

@@ -1,0 +1,115 @@
+/*************************************************************
+ * File: pqueue-extra.cpp
+ *
+ * Implementation file for the ExtraPriorityQueue class.  You
+ * do not need to implement this class, but we're happy to
+ * give you extra credit if you do!
+ */
+ 
+#include "pqueue-extra.h"
+#include "error.h"
+
+ExtraPriorityQueue::ExtraPriorityQueue() {
+    allocatedLength = 8;
+    roots = new node[allocatedLength];
+    logicalLength = 0;
+    head = NULL;
+    tail = NULL;
+}
+
+ExtraPriorityQueue::~ExtraPriorityQueue() {
+	delete[] roots;
+}
+
+int ExtraPriorityQueue::size() {
+	return logicalLength;
+}
+
+bool ExtraPriorityQueue::isEmpty() {
+	return logicalLength ==0;
+}
+
+//function restructures heap to have that of the binomial heap
+void ExtraPriorityQueue::merge() {
+    node* cur = head;
+    node* next = head->right;
+    head = cur;
+    head->right = next;
+    while(true){
+        while(true){ // merging each tree
+            if(next == NULL) break;
+            if(cur->order == next->order){
+                if(cur->value < next->value){
+                    cur->right = next->right;
+                    next->right = cur->left;
+                    cur->left = next;
+                    next->parent = cur;
+                    cur->order += next->order;
+                    next = cur->right;
+                    if(next == NULL) break;
+                } else {
+                    cur->right = next->left;
+                    cur->parent = next;
+                    next->left = cur;
+                    next->order += cur->order;
+                    cur = next;
+                    next = cur->right;
+                    if(next == NULL) break;
+                } 
+            } else next = next->right;
+        } 
+        cur = cur->right;
+        if(cur->right == NULL || cur == NULL) break;
+    }
+    }
+
+void ExtraPriorityQueue::enqueue(string value) {
+
+	node* newNode = new node;
+    newNode -> value = value;
+    newNode -> right = NULL;
+    newNode -> left = NULL;
+    newNode -> parent = NULL;
+    newNode -> order = 0;
+    
+    if(logicalLength == 0){
+        head = newNode;
+        logicalLength++;
+    } else {
+        newNode->right = head; //attach new node on to the front of the heap
+        head = newNode;
+        merge();
+        logicalLength++;
+    }
+}
+
+string ExtraPriorityQueue::peek() {
+	// TODO: Fill this in!
+	
+	return "";
+}
+
+string ExtraPriorityQueue::dequeueMin() {
+	beforeMin = NULL;
+    cur = head;
+    next = head->right;
+    min = head;
+    while(true){ //locate the node with minimum value
+        if(next == NULL) break;
+        if(min->value > next->value){ 
+            min = next;
+            beforeMin = cur;
+        }
+        cur = cur->right;
+        next = next->right;
+    }
+    if(beforeMin == NULL){ //in this case the min is the head
+        
+    
+	result = min->value;
+    
+    
+    
+	return result;
+}
+

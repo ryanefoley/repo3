@@ -1,0 +1,247 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		9306D29C155CEE4200495E29 /* pqueue-doublylinkedlist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9306D291155CEE4200495E29 /* pqueue-doublylinkedlist.cpp */; };
+		9306D29D155CEE4200495E29 /* pqueue-extra.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9306D293155CEE4200495E29 /* pqueue-extra.cpp */; };
+		9306D29E155CEE4200495E29 /* pqueue-heap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9306D295155CEE4200495E29 /* pqueue-heap.cpp */; };
+		9306D29F155CEE4200495E29 /* pqueue-linkedlist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9306D297155CEE4200495E29 /* pqueue-linkedlist.cpp */; };
+		9306D2A0155CEE4200495E29 /* pqueue-test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9306D299155CEE4200495E29 /* pqueue-test.cpp */; };
+		9306D2A1155CEE4200495E29 /* pqueue-vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9306D29A155CEE4200495E29 /* pqueue-vector.cpp */; };
+		E3DDB4070D2F5EB100348E1D /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		E3DDB40C0D2F5EBE00348E1D /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		E3DDB4120D2F60C500348E1D /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Priority Queue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Priority Queue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9306D291155CEE4200495E29 /* pqueue-doublylinkedlist.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "pqueue-doublylinkedlist.cpp"; sourceTree = "<group>"; };
+		9306D292155CEE4200495E29 /* pqueue-doublylinkedlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pqueue-doublylinkedlist.h"; sourceTree = "<group>"; };
+		9306D293155CEE4200495E29 /* pqueue-extra.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "pqueue-extra.cpp"; sourceTree = "<group>"; };
+		9306D294155CEE4200495E29 /* pqueue-extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pqueue-extra.h"; sourceTree = "<group>"; };
+		9306D295155CEE4200495E29 /* pqueue-heap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "pqueue-heap.cpp"; sourceTree = "<group>"; };
+		9306D296155CEE4200495E29 /* pqueue-heap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pqueue-heap.h"; sourceTree = "<group>"; };
+		9306D297155CEE4200495E29 /* pqueue-linkedlist.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "pqueue-linkedlist.cpp"; sourceTree = "<group>"; };
+		9306D298155CEE4200495E29 /* pqueue-linkedlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pqueue-linkedlist.h"; sourceTree = "<group>"; };
+		9306D299155CEE4200495E29 /* pqueue-test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "pqueue-test.cpp"; sourceTree = "<group>"; };
+		9306D29A155CEE4200495E29 /* pqueue-vector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "pqueue-vector.cpp"; sourceTree = "<group>"; };
+		9306D29B155CEE4200495E29 /* pqueue-vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pqueue-vector.h"; sourceTree = "<group>"; };
+		E3DDB4060D2F5EB100348E1D /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
+		E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libStanfordCPPLib.a; path = StanfordCPPLib/libStanfordCPPLib.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				E3DDB4070D2F5EB100348E1D /* Carbon.framework in Frameworks */,
+				E3DDB40C0D2F5EBE00348E1D /* QuickTime.framework in Frameworks */,
+				E3DDB4120D2F60C500348E1D /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Priority Queue.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Priority Queue */ = {
+			isa = PBXGroup;
+			children = (
+				9306D2A2155CEE4900495E29 /* Headers */,
+				9306D29A155CEE4200495E29 /* pqueue-vector.cpp */,
+				9306D297155CEE4200495E29 /* pqueue-linkedlist.cpp */,
+				9306D291155CEE4200495E29 /* pqueue-doublylinkedlist.cpp */,
+				9306D295155CEE4200495E29 /* pqueue-heap.cpp */,
+				9306D293155CEE4200495E29 /* pqueue-extra.cpp */,
+				9306D299155CEE4200495E29 /* pqueue-test.cpp */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = "Priority Queue";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */,
+				E3DDB4060D2F5EB100348E1D /* Carbon.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9306D2A2155CEE4900495E29 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				9306D29B155CEE4200495E29 /* pqueue-vector.h */,
+				9306D298155CEE4200495E29 /* pqueue-linkedlist.h */,
+				9306D292155CEE4200495E29 /* pqueue-doublylinkedlist.h */,
+				9306D296155CEE4200495E29 /* pqueue-heap.h */,
+				9306D294155CEE4200495E29 /* pqueue-extra.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Priority Queue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Priority Queue" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Priority Queue";
+			productInstallPath = "$(HOME)/Applications";
+			productName = "Priority Queue";
+			productReference = 8D1107320486CEB800E47090 /* Priority Queue.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Priority Queue" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Priority Queue */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Priority Queue */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9306D29C155CEE4200495E29 /* pqueue-doublylinkedlist.cpp in Sources */,
+				9306D29D155CEE4200495E29 /* pqueue-extra.cpp in Sources */,
+				9306D29E155CEE4200495E29 /* pqueue-heap.cpp in Sources */,
+				9306D29F155CEE4200495E29 /* pqueue-linkedlist.cpp in Sources */,
+				9306D2A0155CEE4200495E29 /* pqueue-test.cpp in Sources */,
+				9306D2A1155CEE4200495E29 /* pqueue-vector.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PRODUCT_NAME = "Priority Queue";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = .;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = StanfordCPPLib;
+				OTHER_CFLAGS = "-fstack-check";
+				PREBINDING = NO;
+				SDKROOT = "";
+				USER_HEADER_SEARCH_PATHS = StanfordCPPLib;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wno-sign-compare",
+				);
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Priority Queue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Priority Queue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

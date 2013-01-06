@@ -1,0 +1,639 @@
+help(rep)
+data = mvrnorm(n = 3000, mu = rep(0,1000), Sigma = diag(rep(2, 1000)) + matrix(1, ncol = 1000, nrow = 3))
+data = mvrnorm(n = 3000, mu = rep(0,1000), Sigma = diag(rep(2, 1000)) + matrix(1, ncol = 1000, nrow = 1000))
+data
+head(data)
+dim(data)
+data = mvrnorm(n = 3, mu = rep(0,1000), Sigma = diag(rep(2, 1000)) + matrix(1, ncol = 1000, nrow = 1000))
+dim(data)
+x = data
+x.svd = prcomp(x)
+str(x.svd)
+x.svd$u
+library(ade4)
+install.packages("ade4")
+princomp(x)
+x.svd = dudi.pca(x)
+library(ade4)
+x.svd = dudi.pca(x)
+str(x.svd)
+x.svd = prcomp(x)
+str(x.svd)
+u = x.svd$x#
+d = diag(x.svd$sdev)#
+v = x.svd$rotation
+x = mvrnorm(n = 3, mu = rep(0,1000), Sigma = diag(rep(2, 1000)) + matrix(1, ncol = 1000, nrow = 1000))#
+y = rnorm(1000)#
+#
+x.svd = prcomp(x)#
+#
+u = x.svd$x#
+d = diag(x.svd$sdev)#
+v = x.svd$rotation#
+#
+z = u%*%d#
+lambda = 2;#
+i = diag(rep(1,3))#
+betaZ = solve(t(z)%*%z + lambda%*%i)%*%t(z)%*%y#
+betaX = v%*%betaZ#
+#
+betaRidge = solve(t(x)%*%x + lambda%*%i)%*%t(x)%*%y
+x = mvrnorm(n = 3, mu = rep(0,1000), Sigma = diag(rep(2, 1000)) + matrix(1, ncol = 1000, nrow = 1000))#
+y = rnorm(1000)#
+#
+x.svd = prcomp(x)#
+#
+u = x.svd$x#
+d = diag(x.svd$sdev)#
+v = x.svd$rotation#
+#
+z = u%*%d#
+lambda = 2;#
+i = diag(rep(1,3))#
+betaZ = solve(t(z) %*% z + lambda * i) %*% t(z) %*% y#
+betaX = v %*% betaZ#
+#
+betaRidge = solve(t(x) %*% x + lambda * i) %*% t(x) %*% y
+lambda * i
+t(z) %*% z
+solve(t(z) %*% z + lambda * i
+)
+t(z) %*% y
+y
+t(z) %*% t(y)
+x = mvrnorm(n = 3, mu = rep(0,1000), Sigma = diag(rep(2, 1000)) + matrix(1, ncol = 1000, nrow = 1000))#
+y = matrix(rnorm(1000), ncol = 1)#
+#
+x.svd = prcomp(x)#
+#
+u = x.svd$x#
+d = diag(x.svd$sdev)#
+v = x.svd$rotation#
+#
+z = u%*%d#
+lambda = 2;#
+i = diag(rep(1,3))#
+betaZ = solve(t(z) %*% z + lambda * i) %*% t(z) %*% y#
+betaX = v %*% betaZ#
+#
+betaRidge = solve(t(x) %*% x + lambda * i) %*% t(x) %*% y
+dim(t(z))
+dim( y)
+x = mvrnorm(n = 3, mu = rep(0,1000), Sigma = diag(rep(2, 1000)) + matrix(1, ncol = 1000, nrow = 1000))#
+y = matrix(rnorm(3), ncol = 1)#
+#
+x.svd = prcomp(x)#
+#
+u = x.svd$x#
+d = diag(x.svd$sdev)#
+v = x.svd$rotation#
+#
+z = u%*%d#
+lambda = 2;#
+i = diag(rep(1,3))#
+betaZ = solve(t(z) %*% z + lambda * i) %*% t(z) %*% y#
+betaX = v %*% betaZ#
+#
+betaRidge = solve(t(x) %*% x + lambda * i) %*% t(x) %*% y
+dim(t(x) %*% x)
+dim(t(x) %*% y)
+x = mvrnorm(n = 3, mu = rep(0,1000), Sigma = diag(rep(2, 1000)) + matrix(1, ncol = 1000, nrow = 1000))#
+y = matrix(rnorm(3), ncol = 1)#
+#
+x.svd = prcomp(x)#
+#
+u = x.svd$x#
+d = diag(x.svd$sdev)#
+v = x.svd$rotation#
+#
+z = u%*%d#
+lambda = 2;#
+i = diag(rep(1,3))#
+betaZ = solve(t(z) %*% z + lambda * i) %*% t(z) %*% y#
+betaX = v %*% betaZ#
+#
+i = diag(rep(1,1000))#
+betaRidge = solve(t(x) %*% x + lambda * i) %*% t(x) %*% y
+diag(rep(1,1000))
+x = mvrnorm(n = 3, mu = rep(0,1000), Sigma = diag(rep(2, 1000)) + matrix(1, ncol = 1000, nrow = 1000))#
+y = matrix(rnorm(3), ncol = 1)#
+#
+x.svd = prcomp(x)#
+#
+u = x.svd$x#
+d = diag(x.svd$sdev)#
+v = x.svd$rotation#
+#
+z = u%*%d#
+lambda = 2;#
+i = diag(rep(1,3))#
+betaZ = solve(t(z) %*% z + lambda * i) %*% t(z) %*% y#
+betaX = v %*% betaZ#
+#
+k = x %*% t(x)#
+yhat = solve(lambda*i + k) %*% k %*% y#
+#
+yTrick = x %*% betaX#
+#
+abs(yhat-yTrick)
+yhat
+yTrick
+y
+xsvd = u%*%diag(d)%*%t(v)
+dim(u)
+dim(diag(d))
+xsvd = u%*%d%*%t(v)
+sum(abs(x - xsvd))
+help(prcomp)
+x.svd = prcomp(x, center = false)#
+#
+u = x.svd$x#
+d = diag(x.svd$sdev)#
+v = x.svd$rotation
+x.svd = prcomp(x, center = FALSE)#
+#
+u = x.svd$x#
+d = diag(x.svd$sdev)#
+v = x.svd$rotation
+xsvd = u%*%d%*%t(v)
+sum(abs(x - xsvd))
+dim(v)
+sum(abs(x - x.svd$x)
+)
+dim(x.svd$x)
+x.svd <- prcomp(x, retx=TRUE, center=TRUE, #
+scale.=TRUE)
+u = x.svd$x#
+d = diag(x.svd$sdev)#
+v = x.svd$rotation
+xsvd = u%*%d%*%t(v)
+sum(abs(x - x.svd$x)
+)
+sum(abs(x - xsvd))
+x.svd <- prcomp(x, retx=TRUE, center=TRUE, #
+scale=FALSE)
+u = x.svd$x#
+d = diag(x.svd$sdev)#
+v = x.svd$rotation
+sum(abs(x - xsvd))
+x = mvrnorm(n = 3, mu = rep(0,1000), Sigma = diag(rep(2, 1000)) + matrix(1, ncol = 1000, nrow = 1000))#
+y = matrix(rnorm(3), ncol = 1)#
+#
+x.svd = prcomp(x, retx=TRUE, center=TRUE)#
+#
+u = x.svd$x#
+d = diag(x.svd$sdev)#
+v = x.svd$rotation#
+#
+z = u%*%d#
+lambda = 2;#
+i = diag(rep(1,3))#
+betaZ = solve(t(z) %*% z + lambda * i) %*% t(z) %*% y#
+betaX = v %*% betaZ#
+#
+k = x %*% t(x)#
+yhat = solve(lambda*i + k) %*% k %*% y#
+#
+yTrick = x %*% betaX#
+#
+abs(yhat-yTrick)
+yhat
+yTrick
+x = mvrnorm(n = 3, mu = rep(0,1000), Sigma = diag(rep(2, 1000)) + matrix(1, ncol = 1000, nrow = 1000))#
+y = matrix(rnorm(3), ncol = 1)#
+#
+x.svd = prcomp(x, retx=TRUE, center=TRUE)#
+#
+u = x.svd$x#
+d = diag(x.svd$sdev)#
+v = x.svd$rotation#
+#
+z = u%*%d#
+lambda = 2;#
+i = diag(rep(1,3))#
+yTrick = x %*% solve(t(z) %*% z + lambda*i) %*% t(z)#
+#betaZ = solve(t(z) %*% z + lambda * i) %*% t(z) %*% y#
+#betaX = v %*% betaZ#
+#
+k = x %*% t(x)#
+yhat = solve(lambda*i + k) %*% k %*% y#
+#
+#yTrick = x %*% betaX#
+#
+abs(yhat-yTrick)
+help(mvnorm)
+library(MASS)
+help(prcomp)
+x = mvrnorm(n = 3, mu = rep(0,1000), Sigma = diag(rep(2, 1000)) + matrix(1, ncol = 1000, nrow = 1000))#
+y = matrix(rnorm(3), ncol = 1)#
+#
+x.svd = prcomp(x, retx=TRUE, center=TRUE)#
+#
+u = x.svd$x#
+d = diag(x.svd$sdev)#
+v = x.svd$rotation#
+#
+z = u%*%d#
+lambda = 2;#
+i = diag(rep(1,3))#
+yTrick = x %*% solve(t(z) %*% z + lambda*i) %*% t(z)#
+#betaZ = solve(t(z) %*% z + lambda * i) %*% t(z) %*% y#
+#betaX = v %*% betaZ#
+#
+k = x %*% t(x)#
+yhat = solve(lambda*i + k) %*% k %*% y#
+#
+#yTrick = x %*% betaX#
+#
+abs(yhat-yTrick)
+t(z) %*% z
+solve(t(z) %*% z + lambda * i)
+dim(z)
+dim(x)
+x = mvrnorm(n = 3, mu = rep(0,1000), Sigma = diag(rep(2, 1000)) + matrix(1, ncol = 1000, nrow = 1000))#
+y = matrix(rnorm(3), ncol = 1)#
+#
+x.svd = prcomp(x, retx=TRUE, center=TRUE)#
+#
+u = x.svd$x#
+d = diag(x.svd$sdev)#
+v = x.svd$rotation#
+#
+z = u%*%d#
+lambda = 2;#
+i = diag(rep(1,3))#
+yTrick = z %*% solve(t(z) %*% z + lambda*i) %*% t(z)#
+#betaZ = solve(t(z) %*% z + lambda * i) %*% t(z) %*% y#
+#betaX = v %*% betaZ#
+#
+k = x %*% t(x)#
+yhat = solve(lambda*i + k) %*% k %*% y#
+#
+#yTrick = x %*% betaX#
+#
+abs(yhat-yTrick)
+yhat
+yTrick
+t(v) %*% v
+yTrick %*% y
+help(round)
+round(.123456, 3)
+x = mvrnorm(n = 3, mu = rep(0,1000), Sigma = diag(rep(2, 1000)) + matrix(1, ncol = 1000, nrow = 1000))#
+y = matrix(rnorm(3), ncol = 1)#
+#
+x.svd = prcomp(x, retx=TRUE, center=TRUE)#
+#
+u = x.svd$x#
+d = diag(x.svd$sdev)#
+v = x.svd$rotation#
+#
+z = u%*%d#
+lambda = 2;#
+i = diag(rep(1,3))#
+yTrick = z %*% solve(t(z) %*% z + lambda*i) %*% t(z) %*% y#
+#betaZ = solve(t(z) %*% z + lambda * i) %*% t(z) %*% y#
+#betaX = v %*% betaZ#
+#
+k = x %*% t(x)#
+yhat = solve(k + lambda*i) %*% k %*% y#
+#
+#yTrick = x %*% betaX#
+#
+abs(yhat-yTrick)
+yhat
+yTrick
+dim(y)
+dim(x)
+x = mvrnorm(n = 1000, mu = rep(0,1000), Sigma = diag(rep(2, 1000)) + matrix(1, ncol = 1000, nrow = 1000))
+dim(x)
+help(mvrnorm)
+sim = mvrnorm(n = 3, mu = rep(0,1000), Sigma = diag(rep(2, 1000)) + matrix(1, ncol = 1000, nrow = 1000))
+dim(sim)
+x = mvrnorm(n = 3, mu = rep(0,1000), Sigma = diag(rep(2, 1000)) + matrix(1, ncol = 1000, nrow = 1000))#
+y = matrix(rnorm(3), ncol = 1)#
+#
+x.svd = prcomp(x, retx=TRUE, center=TRUE)#
+#
+u = x.svd$x#
+d = diag(x.svd$sdev)#
+v = x.svd$rotation#
+#
+z = u%*%d#
+lambda = 2;#
+i = diag(rep(1,3))#
+y.partb = z %*% solve(t(z) %*% z + lambda*i) %*% t(z) %*% y#
+#
+k = x %*% t(x)#
+y.partc = solve(k + lambda*i) %*% k %*% y#
+abs(yhat-yTrick)
+dim(y)
+yhat
+y
+yTrick
+y-yTrick
+y-yhat
+sum(abs(y-yTrick))
+sum(abs(y-yhat))
+y
+y.parta = x %*% solve(t(x)%*%x + lambda*I) %*% t(x) %*% y
+y.parta = x %*% solve(t(x)%*%x + lambda*i) %*% t(x) %*% y
+t(x) %*% x
+i = diag(rep(1,1000)#
+y.parta = x %*% solve(t(x)%*%x + lambda*i) %*% t(x) %*% y
+i = diag(rep(1,1000))#
+y.parta = x %*% solve(t(x)%*%x + lambda*i) %*% t(x) %*% y
+abs(y.partb - y.parta)
+x = mvrnorm(n = 3, mu = rep(0,1000), Sigma = diag(rep(2, 1000)) + matrix(1, ncol = 1000, nrow = 1000))#
+y = matrix(rnorm(3), ncol = 1)#
+#
+x.svd = prcomp(x, retx=TRUE, center=FALSE)#
+#
+u = x.svd$x#
+d = diag(x.svd$sdev)#
+v = x.svd$rotation#
+#
+z = u%*%d#
+lambda = 2;#
+i = diag(rep(1,3))#
+y.partb = z %*% solve(t(z) %*% z + lambda*i) %*% t(z) %*% y#
+#
+#k = x %*% t(x)#
+#y.parta = solve(k + lambda*i) %*% k %*% y#
+i = diag(rep(1,1000))#
+y.parta = x %*% solve(t(x)%*%x + lambda*i) %*% t(x) %*% y#
+#
+abs(y.partb - y.parta)
+x = mvrnorm(n = 3, mu = rep(0,1000), Sigma = diag(rep(2, 1000)) + matrix(1, ncol = 1000, nrow = 1000))#
+y = matrix(rnorm(3), ncol = 1)#
+#
+x.svd = prcomp(x, retx=FALSE, center=FALSE)#
+#
+u = x.svd$x#
+d = diag(x.svd$sdev)#
+v = x.svd$rotation#
+#
+z = u%*%d#
+lambda = 2;#
+i = diag(rep(1,3))#
+y.partb = z %*% solve(t(z) %*% z + lambda*i) %*% t(z) %*% y#
+#
+#k = x %*% t(x)#
+#y.parta = solve(k + lambda*i) %*% k %*% y#
+i = diag(rep(1,1000))#
+y.parta = x %*% solve(t(x)%*%x + lambda*i) %*% t(x) %*% y#
+#
+abs(y.partb - y.parta)
+u
+d
+v
+d
+u
+help(prcomp)
+x.svd = prcomp(x, retx=TRUE, center=FALSE, scalse = FALSE)
+u
+x = mvrnorm(n = 3, mu = rep(0,1000), Sigma = diag(rep(2, 1000)) + matrix(1, ncol = 1000, nrow = 1000))#
+y = matrix(rnorm(3), ncol = 1)#
+#
+x.svd = prcomp(x, retx=TRUE, center=FALSE, scalse = FALSE)#
+#
+u = x.svd$x#
+d = diag(x.svd$sdev)#
+v = x.svd$rotation#
+#
+z = u%*%d#
+lambda = 2;#
+i = diag(rep(1,3))#
+y.partb = z %*% solve(t(z) %*% z + lambda*i) %*% t(z) %*% y#
+#
+#k = x %*% t(x)#
+#y.parta = solve(k + lambda*i) %*% k %*% y#
+i = diag(rep(1,1000))#
+y.parta = x %*% solve(t(x)%*%x + lambda*i) %*% t(x) %*% y#
+#
+abs(y.partb - y.parta)
+x = mvrnorm(n = 3, mu = rep(0,1000), Sigma = diag(rep(2, 1000)) + matrix(1, ncol = 1000, nrow = 1000))#
+y = matrix(rnorm(3), ncol = 1)#
+#
+x.svd = prcomp(x, retx=TRUE, center=FALSE, scalse = TRUE)#
+#
+u = x.svd$x#
+d = diag(x.svd$sdev)#
+v = x.svd$rotation#
+#
+z = u%*%d#
+lambda = 2;#
+i = diag(rep(1,3))#
+y.partb = z %*% solve(t(z) %*% z + lambda*i) %*% t(z) %*% y#
+#
+#k = x %*% t(x)#
+#y.parta = solve(k + lambda*i) %*% k %*% y#
+i = diag(rep(1,1000))#
+y.parta = x %*% solve(t(x)%*%x + lambda*i) %*% t(x) %*% y#
+#
+abs(y.partb - y.parta)
+x = mvrnorm(n = 3, mu = rep(0,1000), Sigma = diag(rep(2, 1000)) + matrix(1, ncol = 1000, nrow = 1000))#
+y = matrix(rnorm(3), ncol = 1)#
+#
+x.svd = prcomp(x)#
+u = x.svd$x#
+d = diag(x.svd$sdev)#
+v = x.svd$rotation#
+#
+z = u%*%d#
+lambda = 2;#
+i = diag(rep(1,3))#
+y.partb = z %*% solve(t(z) %*% z + lambda*i) %*% t(z) %*% y#
+#
+#k = x %*% t(x)#
+#y.parta = solve(k + lambda*i) %*% k %*% y#
+i = diag(rep(1,1000))#
+y.parta = x %*% solve(t(x)%*%x + lambda*i) %*% t(x) %*% y#
+#
+abs(y.partb - y.parta)
+help(prcomp)
+princomp(x)
+xt.svd = princomp(t(x))
+xt.svd
+str(xt.svd)
+help(princomp)
+xt.svd = princomp(t(x))#
+#
+u = t(xt.svd$loadings)#
+d = diag(xt.svd$sdev)#
+#
+z = u%*%d#
+lambda = 2;#
+i = diag(rep(1,3))#
+y.partb = z %*% solve(t(z) %*% z + lambda*i) %*% t(z) %*% y#
+#
+#k = x %*% t(x)#
+#y.parta = solve(k + lambda*i) %*% k %*% y#
+i = diag(rep(1,1000))#
+y.parta = x %*% solve(t(x)%*%x + lambda*i) %*% t(x) %*% y#
+#
+abs(y.partb - y.parta)
+xt.svd = princomp(t(x), cor = FALSE)#
+#
+u = t(xt.svd$loadings)#
+d = diag(xt.svd$sdev)#
+#
+z = u%*%d#
+lambda = 2;#
+i = diag(rep(1,3))#
+y.partb = z %*% solve(t(z) %*% z + lambda*i) %*% t(z) %*% y#
+#
+#k = x %*% t(x)#
+#y.parta = solve(k + lambda*i) %*% k %*% y#
+i = diag(rep(1,1000))#
+y.parta = x %*% solve(t(x)%*%x + lambda*i) %*% t(x) %*% y#
+#
+abs(y.partb - y.parta)
+help(svd)
+x.svd = svd(x)
+str(x.svd)
+x.svd = svd(x)#
+#
+u = x.svd$u#
+d = diag(x.svd$d)#
+#
+z = u%*%d#
+lambda = 2;#
+i = diag(rep(1,3))#
+y.partb = z %*% solve(t(z) %*% z + lambda*i) %*% t(z) %*% y#
+#
+#k = x %*% t(x)#
+#y.parta = solve(k + lambda*i) %*% k %*% y#
+i = diag(rep(1,1000))#
+y.parta = x %*% solve(t(x)%*%x + lambda*i) %*% t(x) %*% y#
+#
+abs(y.partb - y.parta)
+help(system.time)
+system.time(y.partb = z %*% solve(t(z) %*% z + lambda*i) %*% t(z) %*% y)
+system.time(z %*% solve(t(z) %*% z + lambda*i) %*% t(z) %*% y)
+x.svd = svd(x)#
+#
+u = x.svd$u#
+d = diag(x.svd$d)#
+#
+z = u%*%d#
+lambda = 2;#
+i = diag(rep(1,3))#
+y.partb = z %*% solve(t(z) %*% z + lambda*i) %*% t(z) %*% y#
+#
+#k = x %*% t(x)#
+#y.parta = solve(k + lambda*i) %*% k %*% y#
+I = diag(rep(1,1000))#
+y.parta = x %*% solve(t(x)%*%x + lambda*I) %*% t(x) %*% y#
+#
+abs(y.partb - y.parta)
+system.time(z %*% solve(t(z) %*% z + lambda*i) %*% t(z) %*% y)
+system.time(x %*% solve(t(x)%*%x + lambda*I) %*% t(x) %*% y#
+)
+0.003/1.325
+matrix(c(1,2,3,4,1,2,3,2,2,3,4), ncol = 4)
+x = matrix(c(1,2,3,4,1,2,3,2,2,3,4), ncol = 4)
+x = matrix(c(1,2,3,4,1,2,3,2,2,3,4, 1), ncol = 4)
+z
+x
+x = as.data.frame(x)
+x
+merge(x,x, by.x = "V1", by.y = "V1")
+log(5)
+help(log)
+log2(5)
+log2(4)
+log2(7)
+log2(8)
+log2(9)
+log3(5)
+log?
+dfjs
+?log
+log(5,3)
+log(12, 4)
+log2(100)
+100/2
+50/2
+25/2
+12/2
+6/2
+log2(100)
+2^7
+2^6
+sum?
+sum
+?sum
+s = 0
+sum(1:6)
+sum(10^(1:6))
+sum(10^(1:2))
+sum(10^(1:6)
+)
+log(5, 3)
+log(6, 3)
+choose?
+choose
+?choose
+choose(4,2)
+choose(5,2)
+choose(6,2)
+choose(4,3)
+choose(5,3)
+choose(6,3)
+log(0,3)
+log(1,3)
+log(2,3)
+log(3,3)
+log(4,3)
+log(5,3)
+log(6,3)
+log(10,3)
+log(15,3)
+2*.5^3
+.5^3
+10*9*(9^2)*(9^3)*(9^4)*(9^5)
+choose(6,2)
+log(15,3)
+?log
+?choose
+choose(5,2)
+log(10,3)
+choose(4,2)
+log(6,3)
+log(15,3)
+choose(choose(6,2),3)
+(6 - 3)*3
+455/9
+choose(6,2)*(6-2)
+/9
+choose(6,2)*(6-2)/9
+chose(5,3)
+choose(5,3)
+choose(8,2)
+3(8-2)+4
+3*(8-2)+4
+log(-1)
+test
+//test
+%test
+?pdf
+?runif
+runif(10)
+?sapply
+source(prob2b)
+source('prob2b')
+source('prob2b.R')
+source('prob2b.R')
+source('prob2b.R')
+source('prob2b.R')
+source('prob2b.R')
+x_min
+alpha
+alpha
+source('prob2b.R')
+?sapply
+source('prob2b.R')
+source('prob2b.R')
+source('prob2b.R')
+runif(10)
+source('prob2b.R')

@@ -1,0 +1,560 @@
+THuffmanEncoding
+v7
+r0
+t359539474.663183
+cCheck dependencies
+cProcessInfoPlistFile ./HuffmanEncoding.app/Contents/Info.plist Info.plist
+cCompileC build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/HuffmanEncodingTest.o /Users/daniel/Documents/HuffmanEncoding/HuffmanEncodingTest.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/bstream.o /Users/daniel/Documents/HuffmanEncoding/bstream.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/HuffmanEncoding.o /Users/daniel/Documents/HuffmanEncoding/HuffmanEncoding.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/HuffmanPQueue.o /Users/daniel/Documents/HuffmanEncoding/HuffmanPQueue.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/MemoryDiagnostics.o /Users/daniel/Documents/HuffmanEncoding/MemoryDiagnostics.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cLd ./HuffmanEncoding.app/Contents/MacOS/HuffmanEncoding normal i386
+cTouch ./HuffmanEncoding.app
+
+N./HuffmanEncoding.app
+t1337846674
+s102
+
+N./HuffmanEncoding.app/Contents/Info.plist
+t1337846673
+s743
+
+N./HuffmanEncoding.app/Contents/MacOS/HuffmanEncoding
+t1337846674
+s437032
+
+N./HuffmanEncoding.app/Contents/PkgInfo
+t1337846673
+s8
+
+N/Developer/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h
+c000000004BE89DD40000000000003197
+t1273535956
+s12695
+i<machine/ansi.h>
+i<sys/_types.h>
+
+N/System/Library/Frameworks/Carbon.framework/Carbon
+c000000004C0FDD7E000000000000A5F0
+t1276108158
+s42480
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/System/Library/Frameworks/QuickTime.framework/QuickTime
+c000000004E28906D0000000000785970
+t1311281261
+s7887216
+
+N/Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/HuffmanEncoding.cpp
+c000000004FBC76800000000000001D3F
+t1337751168
+s7487
+i"HuffmanEncoding.h"
+
+N/Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/HuffmanEncoding.h
+c000000004FBB160A000000000000162F
+t1337660938
+s5679
+i"HuffmanTypes.h"
+i"map.h"
+i"bstream.h"
+
+N/Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/HuffmanEncodingTest.cpp
+c000000004FBC59020000000000008C75
+t1337743618
+s35957
+i<iostream>
+i<string>
+i<sstream>
+i<iomanip>
+i"console.h"
+i"simpio.h"
+i"strlib.h"
+i"bstream.h"
+i"HuffmanEncoding.h"
+i"ReferenceHuffmanEncoding.h"
+i"MemoryDiagnostics.h"
+
+N/Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/HuffmanPQueue.cpp
+c000000004FBC4D4200000000000007BE
+t1337740610
+s1982
+i"HuffmanPQueue.h"
+i"HuffmanTypes.h"
+i"error.h"
+
+N/Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/HuffmanPQueue.h
+c000000004FBC4D1C00000000000004A1
+t1337740572
+s1185
+i<queue>
+i<vector>
+
+N/Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/HuffmanTypes.h
+c000000004FBC4D10000000000000086E
+t1337740560
+s2158
+i<stddef.h>
+
+N/Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/MemoryDiagnostics.cpp
+c000000004FBC4D3C000000000000051F
+t1337740604
+s1311
+i"MemoryDiagnostics.h"
+i"HuffmanTypes.h"
+
+N/Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/MemoryDiagnostics.h
+c000000004FBC1B3C000000000000031D
+t1337727804
+s797
+
+N/Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/ReferenceHuffmanEncoding.h
+c000000004FBC4CF80000000000000258
+t1337740536
+s600
+i"HuffmanEncoding.h"
+
+N/Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/bstream.cpp
+c000000004FBC6AD40000000000002680
+t1337748180
+s9856
+i"bstream.h"
+i"error.h"
+i"strlib.h"
+i<iostream>
+
+N/Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/bstream.h
+c000000004FBC4D260000000000002750
+t1337740582
+s10064
+i<istream>
+i<ostream>
+i<fstream>
+i<sstream>
+
+N/Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/libReferenceHuffmanEncoding.a
+c000000004FBC70390000000000027C78
+t1337749561
+s162936
+
+N/Users/daniel/Documents/HuffmanEncoding/HuffmanEncoding.cpp
+c000000004FBDEA280000000000001D3F
+t1337846312
+s7487
+i"HuffmanEncoding.h"
+
+N/Users/daniel/Documents/HuffmanEncoding/HuffmanEncoding.h
+c000000004FBB160A000000000000162F
+t1337660938
+s5679
+i"HuffmanTypes.h"
+i"map.h"
+i"bstream.h"
+
+N/Users/daniel/Documents/HuffmanEncoding/HuffmanEncodingTest.cpp
+c000000004FBDEADE0000000000008C95
+t1337846494
+s35989
+i<iostream>
+i<string>
+i<sstream>
+i<iomanip>
+i"console.h"
+i"simpio.h"
+i"strlib.h"
+i"bstream.h"
+i"HuffmanEncoding.h"
+i"ReferenceHuffmanEncoding.h"
+i"MemoryDiagnostics.h"
+
+N/Users/daniel/Documents/HuffmanEncoding/HuffmanPQueue.cpp
+c000000004FBC4D4200000000000007BE
+t1337740610
+s1982
+i"HuffmanPQueue.h"
+i"HuffmanTypes.h"
+i"error.h"
+
+N/Users/daniel/Documents/HuffmanEncoding/HuffmanPQueue.h
+c000000004FBC4D1C00000000000004A1
+t1337740572
+s1185
+i<queue>
+i<vector>
+
+N/Users/daniel/Documents/HuffmanEncoding/HuffmanTypes.h
+c000000004FBC4D10000000000000086E
+t1337740560
+s2158
+i<stddef.h>
+
+N/Users/daniel/Documents/HuffmanEncoding/MemoryDiagnostics.cpp
+c000000004FBC4D3C000000000000051F
+t1337740604
+s1311
+i"MemoryDiagnostics.h"
+i"HuffmanTypes.h"
+
+N/Users/daniel/Documents/HuffmanEncoding/MemoryDiagnostics.h
+c000000004FBC1B3C000000000000031D
+t1337727804
+s797
+
+N/Users/daniel/Documents/HuffmanEncoding/ReferenceHuffmanEncoding.h
+c000000004FBDEAD000000000000002C0
+t1337846480
+s704
+i"HuffmanEncoding.h"
+
+N/Users/daniel/Documents/HuffmanEncoding/StanfordCPPLib/cmpfn.h
+c000000004F1353A600000000000003A0
+t1326666662
+s928
+i"private/cmpfnimpl.cpp"
+
+N/Users/daniel/Documents/HuffmanEncoding/StanfordCPPLib/console.h
+c000000004F1353A60000000000000615
+t1326666662
+s1557
+i<string>
+i"private/main.h"
+
+N/Users/daniel/Documents/HuffmanEncoding/StanfordCPPLib/error.h
+c000000004F1353A60000000000000528
+t1326666662
+s1320
+i<string>
+i<exception>
+i"private/main.h"
+
+N/Users/daniel/Documents/HuffmanEncoding/StanfordCPPLib/foreach.h
+c000000004F1353A600000000000005D0
+t1326666662
+s1488
+i"private/foreachpriv.h"
+
+N/Users/daniel/Documents/HuffmanEncoding/StanfordCPPLib/libStanfordCPPLib.a
+c000000004F1354000000000000231D68
+t1326666752
+s2301288
+
+N/Users/daniel/Documents/HuffmanEncoding/StanfordCPPLib/map.h
+c000000004F1353A60000000000001100
+t1326666662
+s4352
+i<cstdlib>
+i"cmpfn.h"
+i"error.h"
+i"foreach.h"
+i"stack.h"
+i"private/mappriv.h"
+i"private/mapimpl.cpp"
+
+N/Users/daniel/Documents/HuffmanEncoding/StanfordCPPLib/private/cmpfnimpl.cpp
+c000000004E5D94840000000000000190
+t1314755716
+s400
+
+N/Users/daniel/Documents/HuffmanEncoding/StanfordCPPLib/private/foreachpriv.h
+c000000004E9E3D4A0000000000001171
+t1318993226
+s4465
+i<iterator>
+i<map>
+i<cstddef>
+i<cstring>
+i<ios>
+i<fstream>
+i<sstream>
+
+N/Users/daniel/Documents/HuffmanEncoding/StanfordCPPLib/private/main.h
+c000000004ED1075C00000000000005E0
+t1322321756
+s1504
+
+N/Users/daniel/Documents/HuffmanEncoding/StanfordCPPLib/private/mapimpl.cpp
+c000000004E5D94840000000000002D64
+t1314755716
+s11620
+
+N/Users/daniel/Documents/HuffmanEncoding/StanfordCPPLib/private/mappriv.h
+c000000004F0484CA000000000000156B
+t1325696202
+s5483
+
+N/Users/daniel/Documents/HuffmanEncoding/StanfordCPPLib/private/stackimpl.cpp
+c000000004E5D94840000000000000696
+t1314755716
+s1686
+
+N/Users/daniel/Documents/HuffmanEncoding/StanfordCPPLib/private/stackpriv.h
+c000000004E5D94840000000000000284
+t1314755716
+s644
+
+N/Users/daniel/Documents/HuffmanEncoding/StanfordCPPLib/private/vectorimpl.cpp
+c000000004F0482640000000000001416
+t1325695588
+s5142
+
+N/Users/daniel/Documents/HuffmanEncoding/StanfordCPPLib/private/vectorpriv.h
+c000000004F0485C40000000000001280
+t1325696452
+s4736
+
+N/Users/daniel/Documents/HuffmanEncoding/StanfordCPPLib/simpio.h
+c000000004F1353A600000000000006F9
+t1326666662
+s1785
+i<string>
+
+N/Users/daniel/Documents/HuffmanEncoding/StanfordCPPLib/stack.h
+c000000004F1353A6000000000000098E
+t1326666662
+s2446
+i"error.h"
+i"vector.h"
+i"private/stackpriv.h"
+i"private/stackimpl.cpp"
+
+N/Users/daniel/Documents/HuffmanEncoding/StanfordCPPLib/strlib.h
+c000000004F1353A60000000000000D9D
+t1326666662
+s3485
+i<string>
+
+N/Users/daniel/Documents/HuffmanEncoding/StanfordCPPLib/vector.h
+c000000004F1353A600000000000014AD
+t1326666662
+s5293
+i<iterator>
+i"error.h"
+i"foreach.h"
+i"private/vectorpriv.h"
+i"private/vectorimpl.cpp"
+
+N/Users/daniel/Documents/HuffmanEncoding/bstream.cpp
+c000000004FBC6AD40000000000002680
+t1337748180
+s9856
+i"bstream.h"
+i"error.h"
+i"strlib.h"
+i<iostream>
+
+N/Users/daniel/Documents/HuffmanEncoding/bstream.h
+c000000004FBC4D260000000000002750
+t1337740582
+s10064
+i<istream>
+i<ostream>
+i<fstream>
+i<sstream>
+
+N/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/HuffmanEncoding.LinkFileList
+c000000004FBDEB91000000000000029A
+t1337846673
+s666
+
+N/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/HuffmanEncoding.o
+t1337846673
+s115668
+
+N/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/HuffmanEncodingTest-A449BD296D85D25F.o
+t2
+s0
+
+N/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/HuffmanEncodingTest-BC0708503371367A.o
+t2
+s0
+
+N/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/HuffmanEncodingTest.o
+t1337846674
+s280580
+
+N/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/HuffmanPQueue.o
+t1337846673
+s70340
+
+N/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/MemoryDiagnostics.o
+t1337846673
+s4108
+
+N/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/bstream.o
+t1337846673
+s138044
+
+N/Users/daniel/Documents/HuffmanEncoding/libReferenceHuffmanEncoding.a
+c000000004FBDEB850000000000259BD0
+t1337846661
+s2464720
+
+N/usr/include/sys/_types.h
+c000000004B90BBAB0000000000001845
+t1267776427
+s6213
+
+NInfo.plist
+c0000000049CA973E0000000000000326
+t1238013758
+s806
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies359539473#359539473#0(0"0(0#1#0"8609981152#0"0#
+
+CCompileC build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/HuffmanEncoding.o /Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/HuffmanEncoding.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s359443970.714776
+e359443977.388471
+r1
+xCompileC
+xbuild/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/HuffmanEncoding.o
+x/Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/HuffmanEncoding.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@89"Compile /Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/HuffmanEncoding.cpp359443970#359443977#0(0"0(0#0#81"/Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/HuffmanEncoding.cpp8621783616#947"    cd /Users/daniel/Documents/HuffmanEncoding    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -mfix-and-continue -fvisibility-inlines-hidden -gdwarf-2 -I/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/HuffmanEncoding.hmap -Wall -Wno-sign-compare -F. -IStanfordCPPLib -Iinclude -I/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/DerivedSources/i386 -I/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/DerivedSources -funsigned-char -fstack-check -c /Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/HuffmanEncoding.cpp -o /Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/HuffmanEncoding.o0#
+
+CCompileC build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/HuffmanEncoding.o /Users/daniel/Documents/HuffmanEncoding/HuffmanEncoding.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s359539473.010801
+e359539473.761830
+r1
+xCompileC
+xbuild/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/HuffmanEncoding.o
+x/Users/daniel/Documents/HuffmanEncoding/HuffmanEncoding.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Users/daniel/Documents/HuffmanEncoding/HuffmanEncoding.cpp359539473#359539473#0(0"0(0#0#59"/Users/daniel/Documents/HuffmanEncoding/HuffmanEncoding.cpp8613881312#925"    cd /Users/daniel/Documents/HuffmanEncoding    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -mfix-and-continue -fvisibility-inlines-hidden -gdwarf-2 -I/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/HuffmanEncoding.hmap -Wall -Wno-sign-compare -F. -IStanfordCPPLib -Iinclude -I/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/DerivedSources/i386 -I/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/DerivedSources -funsigned-char -fstack-check -c /Users/daniel/Documents/HuffmanEncoding/HuffmanEncoding.cpp -o /Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/HuffmanEncoding.o0#
+
+CCompileC build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/HuffmanEncodingTest-A449BD296D85D25F.o /Users/daniel/Documents/HuffmanEncoding/HuffmanEncodingTest.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/HuffmanEncodingTest-BC0708503371367A.o /Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/HuffmanEncodingTest.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/HuffmanEncodingTest.o /Users/daniel/Documents/HuffmanEncoding/HuffmanEncodingTest.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s359539473.008556
+e359539474.231102
+r1
+xCompileC
+xbuild/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/HuffmanEncodingTest.o
+x/Users/daniel/Documents/HuffmanEncoding/HuffmanEncodingTest.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Compile /Users/daniel/Documents/HuffmanEncoding/HuffmanEncodingTest.cpp359539473#359539474#0(0"0(0#0#63"/Users/daniel/Documents/HuffmanEncoding/HuffmanEncodingTest.cpp8613369824#954"    cd /Users/daniel/Documents/HuffmanEncoding    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -mfix-and-continue -fvisibility-inlines-hidden -gdwarf-2 -I/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/HuffmanEncoding.hmap -Wall -Wno-sign-compare -F. -IStanfordCPPLib -Iinclude -I/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/DerivedSources/i386 -I/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/DerivedSources -funsigned-char -fstack-check -fvisibility=default -c /Users/daniel/Documents/HuffmanEncoding/HuffmanEncodingTest.cpp -o /Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/HuffmanEncodingTest.o0#
+
+CCompileC build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/HuffmanPQueue.o /Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/HuffmanPQueue.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s359443970.716265
+e359443977.386671
+r1
+xCompileC
+xbuild/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/HuffmanPQueue.o
+x/Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/HuffmanPQueue.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@87"Compile /Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/HuffmanPQueue.cpp359443970#359443977#0(0"0(0#0#79"/Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/HuffmanPQueue.cpp8605378464#943"    cd /Users/daniel/Documents/HuffmanEncoding    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -mfix-and-continue -fvisibility-inlines-hidden -gdwarf-2 -I/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/HuffmanEncoding.hmap -Wall -Wno-sign-compare -F. -IStanfordCPPLib -Iinclude -I/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/DerivedSources/i386 -I/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/DerivedSources -funsigned-char -fstack-check -c /Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/HuffmanPQueue.cpp -o /Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/HuffmanPQueue.o0#
+
+CCompileC build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/HuffmanPQueue.o /Users/daniel/Documents/HuffmanEncoding/HuffmanPQueue.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s359539473.014287
+e359539473.554133
+r1
+xCompileC
+xbuild/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/HuffmanPQueue.o
+x/Users/daniel/Documents/HuffmanEncoding/HuffmanPQueue.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/daniel/Documents/HuffmanEncoding/HuffmanPQueue.cpp359539473#359539473#0(0"0(0#0#57"/Users/daniel/Documents/HuffmanEncoding/HuffmanPQueue.cpp8613711680#921"    cd /Users/daniel/Documents/HuffmanEncoding    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -mfix-and-continue -fvisibility-inlines-hidden -gdwarf-2 -I/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/HuffmanEncoding.hmap -Wall -Wno-sign-compare -F. -IStanfordCPPLib -Iinclude -I/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/DerivedSources/i386 -I/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/DerivedSources -funsigned-char -fstack-check -c /Users/daniel/Documents/HuffmanEncoding/HuffmanPQueue.cpp -o /Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/HuffmanPQueue.o0#
+
+CCompileC build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/MemoryDiagnostics.o /Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/MemoryDiagnostics.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s359443970.717707
+e359443971.234554
+r1
+xCompileC
+xbuild/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/MemoryDiagnostics.o
+x/Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/MemoryDiagnostics.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@91"Compile /Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/MemoryDiagnostics.cpp359443970#359443971#0(0"0(0#0#83"/Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/MemoryDiagnostics.cpp8621386240#951"    cd /Users/daniel/Documents/HuffmanEncoding    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -mfix-and-continue -fvisibility-inlines-hidden -gdwarf-2 -I/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/HuffmanEncoding.hmap -Wall -Wno-sign-compare -F. -IStanfordCPPLib -Iinclude -I/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/DerivedSources/i386 -I/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/DerivedSources -funsigned-char -fstack-check -c /Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/MemoryDiagnostics.cpp -o /Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/MemoryDiagnostics.o0#
+
+CCompileC build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/MemoryDiagnostics.o /Users/daniel/Documents/HuffmanEncoding/MemoryDiagnostics.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s359539473.554309
+e359539473.600059
+r1
+xCompileC
+xbuild/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/MemoryDiagnostics.o
+x/Users/daniel/Documents/HuffmanEncoding/MemoryDiagnostics.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@69"Compile /Users/daniel/Documents/HuffmanEncoding/MemoryDiagnostics.cpp359539473#359539473#0(0"0(0#0#61"/Users/daniel/Documents/HuffmanEncoding/MemoryDiagnostics.cpp8614242944#929"    cd /Users/daniel/Documents/HuffmanEncoding    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -mfix-and-continue -fvisibility-inlines-hidden -gdwarf-2 -I/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/HuffmanEncoding.hmap -Wall -Wno-sign-compare -F. -IStanfordCPPLib -Iinclude -I/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/DerivedSources/i386 -I/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/DerivedSources -funsigned-char -fstack-check -c /Users/daniel/Documents/HuffmanEncoding/MemoryDiagnostics.cpp -o /Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/MemoryDiagnostics.o0#
+
+CCompileC build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/bstream.o /Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/bstream.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s359443971.234705
+e359443977.622282
+r1
+xCompileC
+xbuild/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/bstream.o
+x/Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/bstream.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@81"Compile /Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/bstream.cpp359443971#359443977#0(0"0(0#0#73"/Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/bstream.cpp8621771616#931"    cd /Users/daniel/Documents/HuffmanEncoding    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -mfix-and-continue -fvisibility-inlines-hidden -gdwarf-2 -I/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/HuffmanEncoding.hmap -Wall -Wno-sign-compare -F. -IStanfordCPPLib -Iinclude -I/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/DerivedSources/i386 -I/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/DerivedSources -funsigned-char -fstack-check -c /Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman/bstream.cpp -o /Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/bstream.o0#
+
+CCompileC build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/bstream.o /Users/daniel/Documents/HuffmanEncoding/bstream.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s359539473.009617
+e359539473.845628
+r1
+xCompileC
+xbuild/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/bstream.o
+x/Users/daniel/Documents/HuffmanEncoding/bstream.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@59"Compile /Users/daniel/Documents/HuffmanEncoding/bstream.cpp359539473#359539473#0(0"0(0#0#51"/Users/daniel/Documents/HuffmanEncoding/bstream.cpp8611662400#909"    cd /Users/daniel/Documents/HuffmanEncoding    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -mfix-and-continue -fvisibility-inlines-hidden -gdwarf-2 -I/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/HuffmanEncoding.hmap -Wall -Wno-sign-compare -F. -IStanfordCPPLib -Iinclude -I/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/DerivedSources/i386 -I/Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/DerivedSources -funsigned-char -fstack-check -c /Users/daniel/Documents/HuffmanEncoding/bstream.cpp -o /Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/bstream.o0#
+
+CLd ./HuffmanEncoding.app/Contents/MacOS/HuffmanEncoding normal i386
+s359539474.231216
+e359539474.659245
+r1
+xLd
+x./HuffmanEncoding.app/Contents/MacOS/HuffmanEncoding
+xnormal
+xi386
+lSLF07#2@57"Link ./HuffmanEncoding.app/Contents/MacOS/HuffmanEncoding359539474#359539474#0(0"0(0#0#0"8611895584#588"    cd /Users/daniel/Documents/HuffmanEncoding    /Developer/usr/bin/g++-4.2 -arch i386 -L. -LStanfordCPPLib -L/Users/daniel/Documents/HuffmanEncoding/StanfordCPPLib -L/Users/daniel/Documents/HuffmanEncoding/../../Dropbox/huffman -L/Users/daniel/Documents/HuffmanEncoding -F. -filelist /Users/daniel/Documents/HuffmanEncoding/build/HuffmanEncoding.build/Debug/HuffmanEncoding.build/Objects-normal/i386/HuffmanEncoding.LinkFileList -framework Cocoa -framework Carbon -framework QuickTime -lStanfordCPPLib -lReferenceHuffmanEncoding -o ./HuffmanEncoding.app/Contents/MacOS/HuffmanEncoding0#
+
+CProcessInfoPlistFile ./HuffmanEncoding.app/Contents/Info.plist Info.plist
+s359539473.005071
+e359539473.008470
+r1
+xProcessInfoPlistFile
+x./HuffmanEncoding.app/Contents/Info.plist
+xInfo.plist
+lSLF07#2@18"Process Info.plist359539473#359539473#0(0"0(0#0#50"/Users/daniel/Documents/HuffmanEncoding/Info.plist8610975168#221"    cd /Users/daniel/Documents/HuffmanEncoding    builtin-infoPlistUtility Info.plist -genpkginfo ./HuffmanEncoding.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o ./HuffmanEncoding.app/Contents/Info.plist0#
+
+CTouch ./HuffmanEncoding.app
+s359539474.659501
+e359539474.663137
+r1
+xTouch
+x./HuffmanEncoding.app
+lSLF07#2@27"Touch ./HuffmanEncoding.app359539474#359539474#0(0"0(0#0#0"8610433728#91"    cd /Users/daniel/Documents/HuffmanEncoding    /usr/bin/touch -c ./HuffmanEncoding.app0#
+

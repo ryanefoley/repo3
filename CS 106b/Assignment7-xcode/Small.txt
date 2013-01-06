@@ -1,0 +1,13 @@
+USA.jpg
+NODES
+WashingtonDC 536 176
+Minneapolis 349 100
+SanFrancisco 26 170
+Dallas 310 296
+ARCS
+Minneapolis SanFrancisco 1777
+Minneapolis Dallas 935
+Minneapolis WashingtonDC 1600
+SanFrancisco WashingtonDC 2200
+Dallas SanFrancisco 1540 
+Dallas WashingtonDC 1319

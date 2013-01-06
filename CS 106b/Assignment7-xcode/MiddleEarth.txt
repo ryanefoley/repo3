@@ -1,0 +1,36 @@
+MiddleEarth.jpg
+NODES
+Hobbiton 147 86
+Southfarthing 163 112
+Bree 203 88
+Rivendell 317 87
+Moria 303 133
+Caradhras 327 116
+Isengard 291 194
+Lorien 323 161
+Edoras 305 225
+Rauros 395 227
+MinasTirith 419 260
+BlackGate 452 224
+CirithUngol 458 273
+MountDoom 478 247
+ARCS
+Hobbiton       Southfarthing   1
+Hobbiton       Bree           10
+Southfarthing  Isengard       50
+Bree           Rivendell      30
+Isengard       Edoras         50
+Rivendell      Moria          10
+Rivendell      Caradhras      30
+Moria          Lorien         40
+Caradhras      Lorien         30
+Edoras         Lorien         10
+Lorien         Rauros          5
+Edoras         Rauros         10
+Edoras         MinasTirith    15
+Rauros         BlackGate      20
+Rauros         MinasTirith    15
+MinasTirith    CirithUngol    30
+BlackGate      CirithUngol    20
+BlackGate      MountDoom      70
+CirithUngol    MountDoom      40

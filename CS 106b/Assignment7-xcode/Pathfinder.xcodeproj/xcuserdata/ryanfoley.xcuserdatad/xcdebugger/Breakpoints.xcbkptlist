@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "1.0">
+   <FileBreakpoints>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Pathfinder.cpp"
+         timestampString = "361158553.026192"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "514"
+         endingLineNumber = "514"
+         landmarkName = "BronKerbosch1(Set&lt;Node*&gt; R,Set&lt;Node*&gt; P,Set&lt;Node*&gt; X, Vector&lt; Set&lt;Node*&gt; &gt;&amp; possibleCliques)"
+         landmarkType = "7">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Pathfinder.cpp"
+         timestampString = "361158558.74657"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "534"
+         endingLineNumber = "534"
+         landmarkName = "findMax( Vector&lt; Set&lt;Node*&gt; &gt; cliques)"
+         landmarkType = "7">
+      </FileBreakpoint>
+   </FileBreakpoints>
+</Bucket>

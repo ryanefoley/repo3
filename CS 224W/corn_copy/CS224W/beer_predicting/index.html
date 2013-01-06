@@ -1,0 +1,298 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="description" content="logistic regression, support vector machines, linear classification, document classification">
+   <title>LIBLINEAR -- A Library for Large Linear Classification
+</title>
+</head>
+<body text="#000000" bgcolor="#FFEFD5" link="#FF0000" vlink="#0000FF">
+
+<h2>
+LIBLINEAR -- A Library for Large Linear Classification
+</h2>
+
+<h3>
+<a href="http://www.csie.ntu.edu.tw/~cjlin/mlgroup">Machine Learning Group</a> at
+National Taiwan University
+<br>
+<a href=contributors.html>Contributors</a>
+</h3>
+
+<hr WIDTH="100%">
+
+<img SRC="../images/new.gif" >
+Version 1.92 released on October 10, 2012. We also release
+an experimental version using 64-bit int in 
+<a href=../libsvmtools>LIBSVM tools</a>. It 
+in theory can handle up to 
+2^64 instances/features if memory is enough.
+<p> Details are in the following paper<br>
+C.-H. Ho and C.-J. Lin. <a href=../papers/linear-svr.pdf>
+Large-scale Linear Support Vector Regression</a>
+<p>
+We are interested in trying more <b>large sparse</b> regression data.
+Please let use know if you have some. Thank you.
+
+<p>
+
+<img SRC="../images/new.gif" >
+<b>A practical guide to LIBLINEAR</b> is now available in the end of
+<A HREF="../papers/liblinear.pdf">LIBLINEAR</a> paper.
+<br>
+
+
+<p>
+See some extensions of LIBLINEAR at LIBSVM Tools</a>. 
+<br>
+
+<p>
+LIBLINEAR is the winner of
+<a href=http://largescale.first.fraunhofer.de/summary/>
+ICML 2008 large-scale learning challenge</a>
+(linear SVM track). It is also used for winning
+KDD Cup 2010.
+
+<hr>
+<h3>
+Introduction</h3>
+<p><b>LIBLINEAR </b> is a <b>linear</b> classifier
+for data with <b>millions</b> of 
+instances and features.
+It 
+supports 
+<ul>
+<li>
+L2-regularized classifiers
+<br>
+L2-loss linear SVM,
+L1-loss linear SVM, and
+logistic regression (LR)
+
+</li>
+<li>
+L1-regularized classifiers (after version 1.4)
+<br>
+L2-loss linear SVM and
+logistic regression (LR) 
+</li>
+<li>
+L2-regularized support vector regression (after version 1.9)
+<br>
+L2-loss linear SVR and
+L1-loss linear SVR.
+</li>
+</ul>
+
+
+<p>
+Main features of <b>LIBLINEAR</b> include
+<ul>
+<li> Same data format as 
+<a href=../libsvm><b>LIBSVM</b></a>, our general-purpose
+SVM solver, and also similar usage
+<li>Multi-class classification: 1) one-vs-the rest, 2)
+Crammer & Singer</li>
+<li>Cross validation for model selection</li>
+<li>Probability estimates (logistic regression only)</li>
+<li>Weights for unbalanced data</li>
+<li>MATLAB/Octave, Java, Python, Ruby interfaces</li>
+</ul>
+
+<a href="#document">Documentation</a>
+<p>
+<a href=FAQ.html>FAQ is here</a>
+<hr>
+<h3>
+When to use LIBLINEAR but not <a href=../libsvm>LIBSVM</a></h3>
+
+There are some large data
+for which with/without nonlinear
+mappings gives similar performances.
+<b>Without using kernels</b>, one can quickly train
+a much larger set via a linear classifier.
+<b>Document classification</b> is one such application.
+In the following example (20,242 instances and 47,236 features; available on 
+<a href=../libsvmtools/datasets>LIBSVM data sets</a>), the cross-validation time is significantly
+reduced by using LIBLINEAR:
+<pre>
+% time libsvm-2.85/svm-train -c 4 -t 0 -e 0.1 -m 800 -v 5 rcv1_train.binary
+Cross Validation Accuracy = 96.8136%
+345.569s
+% time liblinear-1.21/train -c 4 -e 0.1 -v 5 rcv1_train.binary
+Cross Validation Accuracy = 97.0161%
+2.944s
+</pre>
+<b>Warning:</b>While LIBLINEAR's default solver
+is very fast for document classification,
+it may be <b>slow</b> in other situations.
+See Appendix C of our
+<a href=../papers/guide/guide.pdf>SVM guide</a>
+about using other solvers in LIBLINEAR.
+
+<p>
+<b>Warning:</b>If you are a beginner and your
+data sets are not large, you should
+consider LIBSVM first.
+
+<hr>
+<h3>
+<a NAME="download">
+Download LIBLINEAR</h3>
+The current release (Version 1.92, October 2012) of <b>LIBLINEAR </b>can be obtained by downloading
+the
+<a href="http://www.csie.ntu.edu.tw/~cjlin/cgi-bin/liblinear.cgi?+http://www.csie.ntu.edu.tw/~cjlin/liblinear+zip">
+zip
+file
+</a>
+or
+<a href="http://www.csie.ntu.edu.tw/~cjlin/cgi-bin/liblinear.cgi?+http://www.csie.ntu.edu.tw/~cjlin/liblinear+tar.gz">
+tar.gz
+</a>
+file.
+
+<p>The package includes the source code in C/C++.
+A README file with detailed explanation is 
+provided. For <b>MS Windows</b> users, there is a subdirectory in the zip
+file containing binary executable files. 
+<p>Please read the <a href="http://www.csie.ntu.edu.tw/~cjlin/liblinear/COPYRIGHT">COPYRIGHT</a>
+notice before using
+<b>LIBLINEAR</b>.&nbsp;
+
+<hr>
+<h3>
+<a NAME="document"></a>
+Documentation and Codes used for experiments in our papers</h3>
+
+<p>
+R.-E. Fan, K.-W. Chang, C.-J. Hsieh, X.-R. Wang, and
+<b>C.-J. Lin</b>.
+<A HREF="../papers/liblinear.pdf">
+LIBLINEAR: A library for large linear classification
+</a> 
+<i><a href=http://www.jmlr.org>Journal
+of Machine Learning Research</a></I> 
+9(2008), 1871-1874. 
+
+<p> The appendices of this paper give all <b>implementation details</b>
+of LIBLINEAR. 
+
+<p> In the end of this paper there is a 
+<b>practical guide</b> to LIBLINEAR
+
+<p>See also some examples in Appendix C of the
+<a href=../papers/guide/guide.pdf>SVM guide</a>.
+
+<p>
+<a href="exp.html">Code used for experiments in our
+LIBLINEAR 
+papers can be found here</a>. 
+<hr>
+<h3>
+Interfaces to LIBLINEAR</h3>
+
+<center>
+
+<table border=1>
+<tr>
+	<th>Language</th>
+	<th>Description</th>
+	<th>Maintainers and Their Affiliation</th>
+	<th>Supported LIBLINEAR version</th>
+	<th>Link</th>
+</tr>
+<tr>
+	<td> <a NAME="matlab">MATLAB</td>
+	<td> A simple MATLAB interface</td>
+	<td>
+		LIBLINEAR authors at National
+		Taiwan University.
+	</td>
+	<td> The latest</td>
+	<td> <a href=#download>Included in LIBLINEAR package</a></td>
+</tr>
+<tr>
+	<td> <a NAME="octave">Octave</td>
+	<td> A simple Octave interface</td>
+	<td>
+		LIBLINEAR authors at National
+		Taiwan University.
+	</td>
+	<td> The latest</td>
+	<td> <a href=#download>Included in LIBLINEAR package</a></td>
+</tr>
+<tr>
+	<td> <a NAME="java">Java</td>
+	<td> Java version of LIBLINEAR</td>
+	<td>Benedikt Waldvogel
+	</td>
+	<td> 1.5</td>
+	<td> <a href="http://www.bwaldvogel.de/liblinear-java/">Java LIBLINEAR</a></td>
+</tr>
+<tr>
+	<td> <a name=python> Python </a></td>
+	<td> A python interface has been included in LIBLINEAR since version 1.6.</td>
+	<td> LIBLINEAR authors at National
+		Taiwan University.</td>
+	<td> The latest</td>
+	<td> <a href=#download>Included in LIBLINEAR package</a></td>
+</tr>
+<tr>
+	<td> <a NAME="java">Python</td>
+	<td> Python wrapper of LIBLINEAR</td>
+	<td> Uwe Schmitt
+	</td>
+	<td> 1.32</td>
+	<td> <a href="http://public.procoders.net/liblinear2scipy/src/dist/">Zip/tar.gz file</a></td>
+</tr>
+<tr>
+	<td> <a NAME="ruby">Ruby</td>
+	<td> A Ruby interface via SWIG</td>
+	<td> 
+		Tom Zeng
+	</td>
+	<td> 1.51</td>
+	<td> <a href=http://github.com/tomz/liblinear-ruby-swig/tree/master>liblinear-ruby-swig</a></td>
+</tr>
+
+<tr>
+	<td> <a name=weka>Weka</a></td>
+	<td> Weka wrapper</td>
+	<td> Benedikt Waldvogel</td>
+	<td> 1.5</td>
+	<td> 
+		<a href=http://wiki.pentaho.com/display/DATAMINING/LibLINEAR>Weka LIBLINEAR</a>
+	</td>
+</tr>
+
+<tr>
+	<td> <a name=R>R</a></td>
+	<td> R interface to LIBLINEAR</td>
+	<td> <a href=http://www.thibaulthelleputte.be>Thibault Helleputte</a></td>
+	<td> 1.8</td>
+	<td> 
+		<a href=http://cran.r-project.org/web/packages/LiblineaR>R LIBLINEAR</a>
+	</td>
+</tr>
+<tr>
+	<td> <a name=scilab>Scilab</a></td>
+	<td> &nbsp;</td>
+	<td> 
+	    Holger Nahrstaedt from the Technical University of Berlin
+	</td>
+	<td> 1.8</td>
+	<td> 
+		<a href=http://atoms.scilab.org/toolboxes/libsvm>Scilab interface</a>
+	</td>
+</tr>
+
+</table>
+</center>
+<p>
+
+<hr>
+Please send comments and suggestions to <a href="../index.html">Chih-Jen
+Lin</a>.
+
+</body>
+</html>
